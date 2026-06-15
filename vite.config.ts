@@ -21,5 +21,5 @@ export default defineConfig({
   esbuild: { target: 'esnext' },
   optimizeDeps: { esbuildOptions: { target: 'esnext' } },
   publicDir: 'public',
-  base: './',
+  base: '/DOWN2/',
 });
