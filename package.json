@@ -1,0 +1,26 @@
+{
+  "name": "down2",
+  "version": "1.0.0",
+  "description": "DOWN 2 — a neon synthwave VR descent: dodge to the beat, then slide. Built with the Immersive Web SDK.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "@iwsdk/core": "^0.4.2",
+    "three": "npm:super-three@0.181.0"
+  },
+  "devDependencies": {
+    "@iwsdk/vite-plugin-dev": "^0.4.2",
+    "@types/three": "^0.181.0",
+    "typescript": "^5.5.0",
+    "vite": "^7.1.4",
+    "vite-plugin-mkcert": "^1.17.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
