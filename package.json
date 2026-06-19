@@ -1,7 +1,7 @@
 {
-  "name": "down2",
+  "name": "papercraft-desert",
   "version": "1.0.0",
-  "description": "DOWN 2 — a neon synthwave VR descent: dodge to the beat, then slide. Built with the Immersive Web SDK.",
+  "description": "A papercraft desert diorama for WebXR, built with the Immersive Web SDK.",
   "private": true,
   "type": "module",
   "scripts": {
