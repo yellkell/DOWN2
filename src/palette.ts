@@ -32,4 +32,8 @@ export const PALETTE = {
   // Drifting paper clouds and the rolling tumbleweed.
   cloud: 0xfbf3e4,
   tumbleweed: 0xa8895a,
+
+  // Scraps kicked up by a dust devil.
+  dust: 0xdcc4a2,
+  dustDark: 0xbfa078,
 } as const;

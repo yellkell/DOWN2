@@ -6,8 +6,9 @@ Three.js + Entity-Component-System framework. Put on a headset and stand in the
 dunes at golden hour, or explore it in the desktop emulator.
 
 Everything you see is **folded paper**: rolling dunes, saguaro and barrel cacti,
-agave rosettes, layered red-rock mesas, drifting clouds and a tumbleweed that
-rolls across the sand — all faceted, flat-shaded card lit by a single warm sun.
+agave rosettes, layered red-rock mesas, drifting clouds, a tumbleweed that rolls
+across the sand, and the occasional dust devil that spins up from a swirl of
+paper scraps — all faceted, flat-shaded card lit by a single warm sun.
 
 ## The papercraft look
 
@@ -52,8 +53,9 @@ src/
     plants.ts              Saguaro, barrel cactus, agave, tumbleweed
     rocks.ts               Layered mesas and scattered boulders
     clouds.ts              Drifting paper cloud puffs
+    dustdevil.ts           A swirling column of paper scraps
     index.ts               Scatters everything; returns the animated handles
-  systems/AmbientSystem.ts Lighting + shadows, scene build, and per-frame motion
+  systems/AmbientSystem.ts Lighting + shadows, scene build, motion, dust devils
 ```
 
 ## Earlier in this repo
