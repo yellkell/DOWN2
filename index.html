@@ -20,10 +20,31 @@
         width: 100vw;
         height: 100vh;
       }
+      /* Boot overlay: shows progress, and surfaces any load error instead of
+         leaving a silent beige screen. Removed once the scene is running. */
+      #boot {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+        color: #6b4a2b;
+        background: #f6cda2;
+        font-size: 18px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+      #boot.error {
+        color: #7a1f1f;
+        background: #f3ddc6;
+      }
     </style>
   </head>
   <body>
     <div id="scene-container"></div>
+    <div id="boot">Loading the desert…</div>
     <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
