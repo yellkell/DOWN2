@@ -1,17 +1,16 @@
 /*
- * DOWN 2 — entry point.
+ * Papercraft Desert — entry point.
  *
- * A neon synthwave VR descent built on the Immersive Web SDK: dodge a rising
- * grid to the beat, then slide a pitched ramp through barrier gates, phase after
- * phase, down the mountain. Sequel to the original A-Frame "DOWN" (see /vr and
- * /vrh in this repo) — same genre, rebuilt on IWSDK's ECS + Three.js with a
- * beat-locked, self-generated soundtrack and a score/combo chase.
+ * A calm, low-poly desert diorama for WebXR, built on the Immersive Web SDK.
+ * Everything is folded-paper geometry — rolling dunes, saguaro and barrel cacti,
+ * agave, layered red-rock mesas, drifting clouds and a rolling tumbleweed — lit
+ * by a single warm sun. Put on a headset and look around, or explore in the
+ * desktop emulator. All scene construction and motion live in AmbientSystem.
  */
 
 import { SessionMode, World } from '@iwsdk/core';
 
-import { buildStaticEnvironment } from './environment.js';
-import { GameSystem } from './systems/GameSystem.js';
+import { AmbientSystem } from './systems/AmbientSystem.js';
 
 World.create(document.getElementById('scene-container') as HTMLDivElement, {
   xr: {
@@ -21,6 +20,5 @@ World.create(document.getElementById('scene-container') as HTMLDivElement, {
   },
   features: {},
 }).then((world) => {
-  buildStaticEnvironment(world.scene);
-  world.registerSystem(GameSystem);
+  world.registerSystem(AmbientSystem);
 });
